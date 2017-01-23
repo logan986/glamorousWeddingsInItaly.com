@@ -109,22 +109,7 @@ gulp.task('html', () =>
 		.pipe($.size({title: 'html'}))
 );
 
-gulp.task('localisation', ['html'], function() {
-	var translations = ['en', 'it'];
-
-	translations.forEach(function(translation){
-		gulp.src('dist/*.html')
-			.pipe(
-				$.translator('locales/'+translation)
-					.on('error', function(){
-						$.utils.log.error(arguments);
-					})
-				)
-			.pipe(gulp.dest('dist/' + (translation === 'en'? '' : translation)));
-	});
-});
-
-gulp.task('html-watch', ['localisation'], browserSync.reload);
+gulp.task('html-watch', ['html'], browserSync.reload);
 
 
 gulp.task('sass', () =>
@@ -177,7 +162,7 @@ gulp.task('watch', ['default'], () => {
 gulp.task('default', ['clean'], cb =>
 	runSequence(
 		['icons', 'images', 'sass', 'js', 'copy'],
-		['localisation'],
+    ['html'],
 		cb
 	)
 );
