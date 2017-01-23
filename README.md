@@ -1,4 +1,4 @@
-# REPO Website Sandra
+# REPO Website Lillo&Sara
 
 The Website is built using [NodeJs](https://nodejs.org/) and [Gulp](http://gulpjs.com/).
 

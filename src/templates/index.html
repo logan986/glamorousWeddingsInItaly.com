@@ -1,65 +1,92 @@
 <!doctype html>
-<html lang="{{lang|translate}}">
+<html lang="it">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Glamorous Weddings in Italy</title>
-	<meta name="description" content="Glamorous Weddings in Italy" />
+	<title>Lillo e Sara</title>
+	<meta name="description" content="Lillo e Sara - 26 agosto 2016" />
 
-	<meta property="og:url" content="http://glamorousweddingsinitaly.com" />
-	<meta property="og:description" content="Sandra Colamedici Wedding Planner" />
-	<meta property="og:title" content="Glamorous Weddings in Italy" />
-	<meta property="og:image" content="http://glamorousweddingsinitaly.com/images/backgrounds/1-small.jpg" />
+	<meta property="og:url" content="http://lilloesara.it" />
+	<meta property="og:description" content="26 agosto 2016" />
+	<meta property="og:title" content="Lillo e Sara" />
+	<meta property="og:image" content="http://lilloesara.it/images/backgrounds/1-small.jpg" />
 
-	<link href="http://fonts.googleapis.com/css?family=Pacifico%7CEB+Garamond" rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Pacifico%7CEB+Garamond" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="canonical" href="glamorousweddingsinitaly.com">
+	<link rel="canonical" href="lilloesara.it">
 
 	@@include('./tmp/svg.svg')
 </head>
 <body>
-	@@include('./partials/analytics.html')
-	@@include('./partials/json-ld.html')
 	<header class="header header--home">
 		<input type="checkbox" id="header__toggle" class="header__toggle">
 		<nav class="header__nav">
 			<ul>
-				<li><a class="header__nav--active" href="#home">Home</a></li>
-				<li><a href="#{{about|translate|lowercase}}">{{about|translate}}</a></li>
-				<li><a href="#{{weddings|translate|lowercase}}">{{weddings|translate}}</a></li>
-				<li><a href="#{{events|translate|lowercase}}">{{events|translate}}</a></li>
-				<li><a href="#gallery">gallery</a></li>
-				<li><a href="#{{contacts|translate|lowercase}}">{{contacts|translate}}</a></li>
+				<li><a class="header__nav--active" href="#cosa">Cosa</a></li>
+				<li><a href="#quando">Quando</a></li>
+				<li><a href="#come">Come</a></li>
+				<li><a href="#dove">Dove</a></li>
+				<li><a href="#contatti">Contatti</a></li>
 			</ul>
 		</nav>
-		<span class="header__logo">Glamorous Weddings in Italy</span>
+		<span class="header__logo">Lillo e Sara</span>
 		<label for="header__toggle" class="header__trigger">
 			<svg><use xlink:href="#icon-toggle"></use></svg>
 		</label>
 	</header>
 
 	<main class="main-content">
-		<div id="home" class="hero panel__fixed panel__fixed--1">
-			<h1>...{{title_1|translate}} <span>{{title_2|translate}} </span>{{title_3|translate}}...</h1>
-		</div>
+		<div id="cosa" class="hero panel__fixed panel__fixed--1"></div>
 
-		@@include('./partials/about.html')
+    <div id="quando" class="about panel__scroll panel__scroll--2">
+    	<div class="content">
+    		<div class="about__intro">
+    			<img src="/images/portrait.png">
+          26 Agosto, ore 17<br />
+    			Celebreremo il nostro matrimonio con rito civile presso la Villa Le Colombare, una residenza di campagna tra Padova e Vicenza, per l'esattezza a Carmignano di Brenta.
+    		</div>
+    		<input type="checkbox" id="about__toggle" class="about__toggle">
+    	</div>
+    </div>
 
 		<div class="panel__fixed panel__fixed--2 panel__fixed--half">
-			<h2><span>Sandra Colamedici</span>Wedding Planner</h2>
+			<h2><span>26 agosto 2016</span>ore 17</h2>
 		</div>
 
-		@@include('./partials/weddings.html')
+    <div id="come" class="weddings panel__scroll panel__scroll--2">
+    	<div class="content">
+    		<h3>Come</h3>
+    		<section>
+    			La villa è costituita da una casa padronale, una vasta barchessa, una torre ma soprattutto tanto verde e un immenso giardino per la cerimonia e il rinfresco, che verrà effettuato nella stessa struttura. Vi invitiamo a condividere con noi questo giorno di festa.
+    		</section>
+    	</div>
+    </div>
 
 		<div class="panel__fixed panel__fixed--3 panel__fixed--half">
 			<h2><span>Where the Magic happens</span></h2>
 		</div>
 
-		@@include('./partials/events.html')
+    <div id="dove" class="events panel__scroll panel__scroll--2">
+    	<div class="content">
+    		<h3>Dove</h3>
+    		<section>
+    			Carmignano di Brenta è raggiungibile in bus, arrivando in treno alla stazione di Padova o Vicenza. Gli aeroporti più vicini sono Treviso e Venezia, ma si può atterrare anche a Verona.
+    		</section>
+    		<section class="content--column">
+    			<img src="/images/about-1.jpg">
+    			<img src="/images/about-2.jpg">
+    		</section>
+    		<section class="events__workshop">
+    			<h4>Dove <span>stare</span></h4>
+    			Nei pressi del luogo di ricevimento ci sono due alberghi che possono ospitare chi viene da fuori: XXX e YYY. Predisporremo una piccola navetta per consentire il trasporto da e per la villa
+    		</section>
+    	</div>
+    </div>
+
 
 		<div class="panel__fixed panel__fixed--4 panel__fixed--half"></div>
 
-		@@include('./partials/gallery.html')
+		<div id="dove" class="gallery panel__scroll panel__scroll--2"></div>
 
 		<div class="panel__fixed panel__fixed--5 panel__fixed--half"></div>
 
