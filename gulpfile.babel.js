@@ -43,10 +43,10 @@ gulp.task('copy', () =>
 
 gulp.task('images', () =>
 	gulp.src('public/images/**/*')
-		.pipe($.cache($.imagemin({
-			progressive: true,
-			interlaced: true
-		})))
+		// .pipe($.cache($.imagemin({
+		// 	progressive: true,
+		// 	interlaced: true
+		// })))
 		.pipe(gulp.dest('dist/images'))
 		.pipe($.size({title: 'images'}))
 );
