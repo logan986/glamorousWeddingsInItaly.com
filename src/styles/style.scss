@@ -64,6 +64,9 @@ a {
 	}
 	h4 {
 		@include font-size(35px);
+		font-size: 2.1875rem;
+   		font-style: italic;
+   		font-weight: 900;
 	}
 }
 
@@ -73,6 +76,11 @@ a {
 	column-gap: 2em;
 	column-rule: 1px dotted #ddd;
 	column-fill: auto;
+}
+
+#conclusioni {
+	margin-top: -3em;
+	margin-bottom: 1em;
 }
 
 footer {

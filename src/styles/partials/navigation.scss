@@ -85,7 +85,7 @@
 
 		&.header__nav--active,
 		&:hover {
-			color: $color-2;
+			color: $color-1;
 		}
 
 		@include MQ(M) {
